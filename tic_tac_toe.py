@@ -94,7 +94,7 @@ def winner():
 		game_over=True
 	elif updated_board[9]==updated_board[29] and updated_board[29]==updated_board[49]:
 		game_over=True
-	elif turn >=9:
+	elif turn >9:
 		game_over=True
 
 def ttt():
@@ -111,7 +111,7 @@ def ttt():
 		winner()
 		# print(game_over)
 		turn+=1
-	if turn > 8:
+	if turn > 9:
 		print("It's a Draw!")
 	elif turn%2==0:
 		print("Congratulations!, Player 1 won\n")
